@@ -1,0 +1,175 @@
+[settings]
+throttle-ms = 50
+throttle-limit = 5
+
+[bar/example]
+monitor = eDP1
+width = 100%
+height = 20
+offset-y = 5
+
+background = #282a36
+foreground = #f2f2f2
+
+overline-size = 2
+overline-color = #bc92f8
+underline-size = 2
+underline-color = #bc92f8
+
+spacing = 1
+padding-right = 2
+module-margin-left = 0
+module-margin-right = 2
+
+#font-0 = NotoSans-Regular:size=8
+#font-1 = CaskaydiaCove NF:size=8
+#font-2 = CaskaydiaCove NF:size=10
+#font-3 = CaskaydiaCove NF:size=8;0
+#font-4 = CaskaydiaCove NF:size=6
+
+font-0 = Roboto:size=10;2
+font-1 = Roboto:size=8;1
+font-2 = Roboto:size=10;-1
+font-3 = FiraCode Nerd Font Mono:size=18;3
+font-4 = Roboto:size=6;-3
+
+modules-left = bspwm
+modules-center = xwindow
+modules-right = cpu volume battery clock
+
+[module/bspwm]
+type = internal/bspwm
+
+format = <label-state> <label-mode>
+
+label-active = %index%
+label-active-padding = 2
+label-active-margin = 1
+label-active-font = 1
+label-active-foreground = #f8f8f2
+label-active-background = #44475a
+#label-active-overline = #148ebe
+label-active-underline = #148ebe
+
+label-occupied = %index%
+label-occupied-padding = 2
+label-occupied-margin = 1
+label-occupied-background = #44475a
+label-occupied-foreground = #f8f8f2
+#label-occupied-overline = #c5c5c5
+#label-occupied-underline = #c5c5c5
+label-occupied-font = 1 
+
+label-urgent = %index%
+label-urgent-padding = 2
+label-urgent-margin = 1
+label-urgent-font = 1
+
+label-empty = %index%
+label-empty-padding = 2
+label-empty-margin = 1
+label-empty-font = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+format = <label>
+format-background = #bd93f9
+format-foreground = #2a2c45
+#format-underline = #60eaa5
+#format-overline = #60eaa5
+format-padding = 2
+
+label = %{T3}%{T-}  %percentage%% 
+label-font = 3 
+
+
+[module/memory]
+type = internal/memory
+
+format = <label> <bar-used>
+format-padding = 2
+format-background = #cb66cc
+format-foreground = #ffe3ff
+format-underline = #e58de6
+format-overline = #e58de6
+
+label = %{T3}﬙%{T-}  
+label-font = 3
+
+bar-used-width = 10
+bar-used-indicator = |
+bar-used-indicator-font = 4
+bar-used-indicator-foreground = #ffaaf5
+bar-used-fill = ─
+bar-used-fill-font = 4
+bar-used-fill-foreground = #ffaaf5
+bar-used-empty = ─
+bar-used-empty-font = 4
+bar-used-empty-foreground = #934e94
+
+[module/clock]
+type = internal/date
+date = %%{T1}%H:%M%%{T-}
+
+format-padding = 2
+format-background = #ff4279
+format-foreground = #2a2c54
+#format-underline = #ff63a5
+#format-overline = #ff63a5
+
+[module/volume]
+type = internal/volume
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+headphone-id = 9
+
+format-volume-padding = 2
+format-volume-background = #8be9fd
+format-volume-foreground = #43433a
+#format-volume-underline = #fffb8f
+#format-volume-overline = #fffb8f
+
+format-muted-padding = 2
+format-muted-background = #77ffffff
+format-muted-foreground = #222222
+
+label-volume = %{T3}%{T-} %percentage%
+label-volume-font = 3
+label-muted = %{T3}婢%{T-}
+label-muted-font = 3
+
+[module/xwindow]
+type = internal/xwindow
+label-font = 1
+
+[module/battery]
+type = internal/battery 
+battery = BAT0
+adapter = AC
+poll-interval = 5
+
+format-discharging = <ramp-capacity>  <label-discharging>
+
+format-charging = <ramp-capacity> <label-charging>
+
+format-discharging-padding = 2
+format-charging-padding = 2
+
+format-discharging-background = #f1fa8c
+format-discharging-foreground = #2a2c45
+format-charging-background = #50fa7b
+label-charging-foreground = #2a2c45
+label-discharging-foreground = #2a2c45
+label-charged-background = #50fa7b
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 =  
+ramp-capacity-foreground = #2a2c45
+
+; vim:ft=dosini
+

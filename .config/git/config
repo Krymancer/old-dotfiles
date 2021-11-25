@@ -1,0 +1,84 @@
+[url "https://github.com/"]
+        insteadOf = gh:
+[url "git@github.com:"]
+        pushInsteadOf = "gh:"
+
+[url "https://gitlab.com/"]
+        insteadOf = gl:
+[url "git@gitlab.com:"]
+        pushInsteadOf = "gl:"
+
+[url "https://aur.archlinux.org/"]
+        insteadOf = aur:
+[url "aur@aur.archlinux.org:"]
+	pushInsteadOf = "aur:"
+[alias]
+	 a = add
+  b = branch
+  c = commit
+  d = diff
+  f = fetch
+  g = grep
+  l = log
+  m = merge
+  o = checkout
+  p = pull
+  s = status
+  w = whatchanged
+
+  ##
+  # Short aliases for our frequent commands.
+  ##
+
+  ### add ###
+
+  # add all
+  aa = add --all
+
+  # add by patch - looks at each change, and asks if we want to put it in the repo.
+  ap = add --patch
+
+  # add just the files that are updated.
+  au = add --update
+
+  ### branch ###
+
+  # branch and only list branches whose tips are reachable from the specified commit (HEAD if not specified).
+  bm = branch --merged
+
+  # branch and only list branches whose tips are not reachable from the specified commit (HEAD if not specified).
+  bnm = branch --no-merged
+
+  # branch with edit description
+  bed = branch --edit-description
+
+  # branch with show description; ideally git will add this feature in the future as `git --show-description`
+  bsd = "!f(){ \
+    branch=\"${1:-$(git rev-parse --abbrev-ref HEAD 2>/dev/null)}\";  \
+    git config \"branch.$branch.description\"; \
+  };f"
+
+  # branch verbose: When in list mode, show sha1, commit subject line, relationship, etc.
+  # This is identical to doing `git b -v`.
+  bv = branch --verbose
+
+  # branch verbose x2: When in list mode, show path, upstream branch, etc.
+  # This is identical to doing `git b -vv`.
+  bvv = branch --verbose --verbose
+
+  ### commit ###
+
+  # commit - amend the tip of the current branch rather than creating a new commit.
+  ca = commit --amend
+
+  # commit - amend the tip of the current branch, and edit the message.
+  cam = commit --amend --message
+
+  # commit - amend the tip of the current branch, and do not edit the message.
+  cane = commit --amend --no-edit
+
+  # commit interactive
+  ci = commit --interactive
+
+  # commit with a message
+  cm = commit --message
