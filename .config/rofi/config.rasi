@@ -1,10 +1,9 @@
 configuration{
     modi: "run,drun,window";
     lines: 5;
-    font: "Iosevka 12";
+    font: "CaskaydiaCove NF 12";
     show-icons: true;
-    icon-theme: "Oranchelo";
-    terminal: "st";
+    terminal: "kitty";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
@@ -16,7 +15,7 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "onedark"
+@theme "dracula"
 
 element-text, element-icon , mode-switcher {
     background-color: inherit;
@@ -42,7 +41,7 @@ inputbar {
 }
 
 prompt {
-    background-color: @blue;
+    background-color: @purple;
     padding: 6px;
     text-color: @bg-col;
     border-radius: 3px;
@@ -90,7 +89,7 @@ mode-switcher {
 
 button {
     padding: 10px;
-    background-color: @bg-col-light;
+    background-color: @bg-col;
     text-color: @grey;
     vertical-align: 0.5; 
     horizontal-align: 0.5;
@@ -98,5 +97,5 @@ button {
 
 button selected {
   background-color: @bg-col;
-  text-color: @blue;
+  text-color: @purple;
 }

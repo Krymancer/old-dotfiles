@@ -26,3 +26,4 @@ picom &
 #nitorgen --restore &
 feh --bg-fill ~/Imagens/wallpapers/wall.png
 sxhkd
+setxkbmap
