@@ -1,5 +1,8 @@
 # Dotfiles
 
+I spendend too much time tweaking this to risc lose everthing.
+My dotfiles, mostly are to configure Dracula theme on everthing i use, but i have some alias and configurations to programs in here too.
+
 ## Preview
 
 ![Screenshot](https://raw.githubusercontent.com/Krymancer/dotfiles/main/.github/screenshot.png)
@@ -19,5 +22,5 @@
 
 ## Credits
 
-Special thanks [siduck](https://github.com/siduck/dotfiles), [jaagr](https://github.com/jaagr/dots) and [MokuKen](https://github.com/MokuKen/DOTS) for inspiration and some base configs, when i started using arch i have no idead and reading, copying and editing all these config files i was able to configure this theme and made it perfect for me
+Special thanks [siduck](https://github.com/siduck/dotfiles), [jaagr](https://github.com/jaagr/dots) and [MokuKen](https://github.com/MokuKen/DOTS) for inspiration and some base configs, when i started using arch i have no idea how to do anything, but reading and editing all these config files i was able to configure this theme and made it perfect for me!!
 	 
