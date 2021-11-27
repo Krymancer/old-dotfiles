@@ -6,13 +6,13 @@
 
 ## Dependences
 
-	- [bspwm](https://github.com/baskerville/bspwm) Tiling Window Manager
-	- [sxhkd](https://github.com/baskerville/sxhkd) Shortcuts & inputs commands
-	- [rofi](https://github.com/davatorium/rofi) For program launcher
-	- [polybar](https://github.com/polybar/polybar) For Top Panel
-	- [kitty](https://sw.kovidgoyal.net/kitty/) For Terminal
-	- [dracula](https://github.com/dracula/gtk) For GTK Theme
-	- [Caskaydia Cove Nerd Font](https://github.com/ryanoasis/nerd-fonts) For Icons 
+- [bspwm](https://github.com/baskerville/bspwm) Tiling Window Manager
+- [sxhkd](https://github.com/baskerville/sxhkd) Shortcuts & inputs commands
+- [rofi](https://github.com/davatorium/rofi) For program launcher
+- [polybar](https://github.com/polybar/polybar) For Top Panel
+- [kitty](https://sw.kovidgoyal.net/kitty/) For Terminal
+- [dracula](https://github.com/dracula/gtk) For GTK Theme
+- [Caskaydia Cove Nerd Font](https://github.com/ryanoasis/nerd-fonts) For Icons 
 
 ## Wallpaper
 ![Wallpaper](https://imgur.com/a/kICEhTP)
